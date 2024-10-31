@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #f0f2f5;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+}
+
+/* Header Styles */
+.app-header {
+  background-color: #4caf50;
   color: white;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.app-header h1 {
+  font-size: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Card Styles */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #333;
+  margin: 16px 0;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-details {
+  padding: 16px;
+  text-align: left;
+}
+
+.card-details p {
+  font-size: 0.9rem;
+  margin: 8px 0;
+}
+
+/* Audio Player Styles */
+.audio-player {
+  width: 80%;
+  margin: 16px auto;
+}
+
+/* Loading Text Styles */
+.loading {
+  font-size: 1.5rem;
+  color: #666;
 }
